@@ -25,5 +25,19 @@ namespace ShoppingApi.Controllers
         {
             return products;
         }
+
+        [HttpGet("{id}", Name ="GetProduct")] 
+        public IActionResult GetById(int num)
+        {
+            var product = products.FirstOrDefault((p) => p.Id == num);
+            
+            if (product == null)
+            {
+                return NotFound(); // returns a proper 404 
+            }
+
+            return Ok(product);
+        }
+
     }
 }
