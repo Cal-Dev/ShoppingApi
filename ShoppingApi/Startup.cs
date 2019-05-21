@@ -30,7 +30,7 @@ namespace ShoppingApi
 
             services.AddDbContext<IdentityDbContext>(options =>
             options.UseSqlite("Data Source = users.sqllite",
-            optionsBuilder => optionsBuilder.MigrationsAssembly("ShoppingAPI")));
+            optionsBuilder => optionsBuilder.MigrationsAssembly("ShoppingApi")));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<IdentityDbContext>()
