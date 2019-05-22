@@ -14,9 +14,9 @@ namespace ShoppingApi.Controllers
     {
         Product[] products = new Product[]
         {
-            new Product { Id = 1 , Name = "Mechanical Keyboard", Category="Electronics", Price = 60 },
-           new Product  { Id = 2 , Name = "Legendary Book ", Category="Books", Price = 21.99M },
-           new Product { Id = 3 , Name = "Blender", Category="Applicance", Price = 60.99M },
+            new Product { Id = 1 , Name = "Mechanical Keyboard", Category="Electronics", Price = 60 , Photo = "https://upload.wikimedia.org/wikipedia/commons/0/02/OLED_keyboard.jpg"},
+           new Product  { Id = 2 , Name = "Legendary Book ", Category="Books", Price = 21.99M, Photo = "https://upload.wikimedia.org/wikipedia/commons/6/68/De_Gesammelte_Werke_III_%28Schnitzler%29_001.jpg" },
+           new Product { Id = 3 , Name = "Blender", Category="Applicance", Price = 60.99M, Photo ="https://upload.wikimedia.org/wikipedia/commons/5/5f/Braun_KM_32_K%C3%BCchenmaschine_Mixaufsatz_%28KX_32%29_-3425.jpg"},
 
         };
 
